@@ -1,0 +1,46 @@
+apt install update && apt install upgrade
+sudo apt install update && apt install upgrade
+sudo apt update && apt upgrade
+sudo su
+ls
+cd repogit/
+ls
+git clone git@github.com:AbigailVictoriaMedinaBruno/TP_AySO1.git
+cd TP_AySO1/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i  Home_url /etc/os-release
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git status
+git config --global user.email "abigailmedinabruno@gmail.com" && git config --global user.name "AbigailVictoriaMedinaBruno"
+git status
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt 
+git status
+git add datos_usuario.txt 
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF >> README.md
+Alumno: Abigail Medina
+División: 315 Turno: Noche
+
+
+EOF
+
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git status
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
