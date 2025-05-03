@@ -1,1 +1,2 @@
 “Usuario=abigail”
+model name	: AMD Ryzen 5 5500
